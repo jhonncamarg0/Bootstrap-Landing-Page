@@ -1,4 +1,13 @@
-.logo {
+.logo--header {
+    background-image: url("../img/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+}
+
+.logo--main {
     background-image: url("../img/logo.png");
     background-position: center;
     background-repeat: no-repeat;
