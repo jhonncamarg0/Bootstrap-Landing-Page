@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Bootstrap Landing Page </title>
+        <link href="./assets/img/logo.png" rel="icon">
+        <link href="./assets/css/reset.css" rel="stylesheet">
+        <link href="./assets/css/normalize.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link href="./assets/css/main.css" rel="stylesheet">
+        <link href="./assets/css/logo.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark navbar-expand">
+                <div class="container">
+                    <h1><a href="#" class="navbar-brand"> Bootstrap </a></h1>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a href="#" aria-current="page" class="nav-link active"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link"> About </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link"> Contact </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link"> Services </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="bg-dark py-5 d-flex flex-column justify-content-center align-items-center row-gap">
+                <div class="logo"></div>
+                <div class="text-white text-center w-50">
+                    <h1> Build fast, responsive sites with Bootstrap </h1>
+                    <p class="text-white-50"><strong> Powerful, extensible, and feature-packed frontend toolkit. Build and customize with
+                    Sass, utilize prebuilt grid system and components, and bring projects to life with
+                    powerful JavaScript plugins. </strong></p>
+                </div>
+                <div>
+                    <button class="btn btn-primary"> Get started </button>
+                    <button class="btn btn-outline-light"> Learn more </button>
+                </div>
+            </section>
+            <section class="container-fluid p-5">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card py-4 px-2">
+                            <div class="card-body">
+                                <h3 class="card-title small text-muted text-uppercase"><strong> free </strong></h3>
+                                <p class="card-text">
+                                    <span class="display-3"><strong> $0 </strong></span>
+                                    <span class="text-muted">/mo.</span>
+                                </p>
+                                <ul class="list-unstyled d-flex flex-column row-gap">
+                                    <li class="bi bi-check"><strong> 1 user </strong></li>
+                                    <li class="bi bi-check"> 5GB storage </li>
+                                    <li class="bi bi-check"> Unlimited public projects </li>
+                                    <li class="bi bi-check"> Community access </li>
+                                    <li class="bi bi-x text-muted"> Unlimited private projects </li>
+                                    <li class="bi bi-x text-muted"> Dedicated support </li>
+                                    <li class="bi bi-x text-muted"> Free linked domain </li>
+                                    <li class="bi bi-x text-muted"> Monthly status reports </li>
+                                </ul>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#freeplan" class="btn btn-primary w-100"> Choose plan </a>
+                                <div id="freeplan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 id="exampleModalLabel" class="modal-title fs-5 text-muted text-uppercase"><strong> free plan </strong></h1>
+                                                <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            Sign free plan?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" data-bs-dismiss="modal" class="btn btn-secondary"> Close </button>
+                                                <button type="button" data-bs-dismiss="modal" class="btn btn-primary"> Sign </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card py-4 px-2">
+                            <div class="card-body">
+                                <h3 class="bi bi-star-fill card-title small text-muted text-uppercase"><strong> pro </strong></h3>
+                                <p class="card-text">
+                                    <span class="display-3"><strong> $9 </strong></span>
+                                    <span class="text-muted">/mo.</span>
+                                </p>
+                                <ul class="list-unstyled d-flex flex-column row-gap">
+                                    <li class="bi bi-check"><strong> 5 users </strong></li>
+                                    <li class="bi bi-check"> 5GB storage </li>
+                                    <li class="bi bi-check"> Unlimited public projects </li>
+                                    <li class="bi bi-check"> Community access </li>
+                                    <li class="bi bi-check"> Unlimited private projects </li>
+                                    <li class="bi bi-check"> Dedicated support </li>
+                                    <li class="bi bi-check"> Free linked domain </li>
+                                    <li class="bi bi-x text-muted"> Monthly status reports </li>
+                                </ul>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#proplan" class="btn btn-primary w-100"> Choose plan </a>
+                                <div id="proplan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 id="exampleModalLabel" class="bi bi-star-fill modal-title fs-5 text-muted text-uppercase"><strong> pro plan </strong></h1>
+                                                <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            Sign pro plan?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" data-bs-dismiss="modal" class="btn btn-secondary"> Close </button>
+                                                <button type="button" data-bs-dismiss="modal" class="btn btn-primary"> Sign </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card py-4 px-2">
+                            <div class="card-body">
+                                <h3 class="card-title small text-muted text-uppercase"><strong> enterprise </strong></h3>
+                                <p class="card-text">
+                                    <span class="display-3"><strong> $49 </strong></span>
+                                    <span class="text-muted">/mo.</span>
+                                </p>
+                                <ul class="list-unstyled d-flex flex-column row-gap">
+                                    <li class="bi bi-check"><strong> Unlimited users </strong></li>
+                                    <li class="bi bi-check"> 5GB storage </li>
+                                    <li class="bi bi-check"> Unlimited public projects </li>
+                                    <li class="bi bi-check"> Community access </li>
+                                    <li class="bi bi-check"> Unlimited private projects </li>
+                                    <li class="bi bi-check"> Dedicated support </li>
+                                    <li class="bi bi-check"><strong> Unlimited linked domain </strong></li>
+                                    <li class="bi bi-check"> Monthly status reports </li>
+                                </ul>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#enterpriseplan" class="btn btn-primary w-100"> Choose plan </a>
+                                <div id="enterpriseplan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 id="exampleModalLabel" class="modal-title fs-5 text-muted text-uppercase"><strong> enterprise plan </strong></h1>
+                                                <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Sign enterprise plan?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" data-bs-dismiss="modal" class="btn btn-secondary"> Close </button>
+                                                <button type="button" data-bs-dismiss="modal" class="btn btn-primary"> Sign </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="card text-center">
+                <div class="card-footer text-muted">
+                    Bootstrap &copy;
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
