@@ -39,20 +39,85 @@
             </nav>
         </header>
         <main>
-            <section class="bg-dark bg-dark--fire px-4 py-5 d-flex flex-column justify-content-center align-items-center row-gap">
-                <div class="logo--main"></div>
-                <div class="banner text-white text-center d-flex flex-column row-gap">
-                    <h1> Build fast, responsive sites with Bootstrap </h1>
-                    <div class="card card--fire bg-dark px-2 py-2">
-                        <span class="text-white-50"><strong> Powerful, extensible, and feature-packed frontend toolkit. Build and customize with
-                        Sass, utilize prebuilt grid system and components, and bring projects to life with
-                        powerful JavaScript plugins. </strong></span>
-                        <div class="px-2 py-2">
-                            <button class="btn btn-primary"> Get started </button>
-                            <button class="btn btn-outline-light"> Learn more </button>
-                        </div>
+            <section id="carouselExampleFade" data-bs-ride="carousel" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <section class="bg-dark bg-dark--fire px-4 py-5 d-flex flex-column justify-content-center align-items-center row-gap">
+                            <div class="logo--main"></div>
+                            <div class="banner text-white text-center d-flex flex-column row-gap">
+                                <h1> Build fast, responsive sites with Bootstrap </h1>
+                                <div class="card card--fire bg-dark px-2 py-2">
+                                    <span class="text-white-50"><strong> Powerful, extensible, and feature-packed frontend toolkit. Build
+                                    and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with
+                                    powerful JavaScript plugins. </strong></span>
+                                    <div class="px-2 py-2">
+                                        <button class="btn btn-primary"> Get started </button>
+                                        <button class="btn btn-outline-light"> Learn more </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="carousel-item">
+                        <section class="bg-dark bg-dark--fire px-4 py-5 d-flex flex-column justify-content-center align-items-center row-gap">
+                            <div class="logo--main"></div>
+                            <div class="banner text-white text-center d-flex flex-column row-gap">
+                                <h1 class="bi bi-building"> Enterprise License </h1>
+                                <div class="card card--fire bg-dark px-2 py-2">
+                                    <span class="text-white-50"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Explicabo saepe optio molestiae earum aperiam corporis! Sed voluptatibus molestias reiciendis possimus
+                                    incidunt, impedit quos temporibus ipsa, nesciunt odio aspernatur, voluptas error. </strong></span>
+                                    <div class="px-2 py-2">
+                                        <button class="btn btn-primary"> Get started </button>
+                                        <button class="btn btn-outline-light"> Learn more </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="carousel-item">
+                        <section class="bg-dark bg-dark--fire px-4 py-5 d-flex flex-column justify-content-center align-items-center row-gap">
+                            <div class="logo--main"></div>
+                            <div class="banner text-white text-center d-flex flex-column row-gap">
+                                <h1 class="bi bi-briefcase"> Pro License </h1>
+                                <div class="card card--fire bg-dark px-2 py-2">
+                                    <span class="text-white-50"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Explicabo saepe optio molestiae earum aperiam corporis! Sed voluptatibus molestias reiciendis possimus
+                                    incidunt, impedit quos temporibus ipsa, nesciunt odio aspernatur, voluptas error. </strong></span>
+                                    <div class="px-2 py-2">
+                                        <button class="btn btn-primary"> Get started </button>
+                                        <button class="btn btn-outline-light"> Learn more </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="carousel-item">
+                        <section class="bg-dark bg-dark--fire px-4 py-5 d-flex flex-column justify-content-center align-items-center row-gap">
+                            <div class="logo--main"></div>
+                            <div class="banner text-white text-center d-flex flex-column row-gap">
+                                <h1 class="bi bi-piggy-bank"> Free License </h1>
+                                <div class="card card--fire bg-dark px-2 py-2">
+                                    <span class="text-white-50"><strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Explicabo saepe optio molestiae earum aperiam corporis! Sed voluptatibus molestias reiciendis possimus
+                                    incidunt, impedit quos temporibus ipsa, nesciunt odio aspernatur, voluptas error. </strong></span>
+                                    <div class="px-2 py-2">
+                                        <button class="btn btn-primary"> Get started </button>
+                                        <button class="btn btn-outline-light"> Learn more </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev" class="carousel-control-prev">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden"> Previous </span>
+                </button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next" class="carousel-control-next">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden"> Next </span>
+                </button>
             </section>
             <section class="container-fluid p-4">
                 <div class="row">
@@ -78,17 +143,34 @@
                                 <div id="freeplan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 id="exampleModalLabel" class="modal-title fs-5 text-muted text-uppercase"><strong> free plan </strong></h1>
-                                                <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                            Sign free plan?
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" data-bs-dismiss="modal" class="btn btn-secondary"> Close </button>
-                                                <button type="button" data-bs-dismiss="modal" class="btn btn-primary"> Sign </button>
-                                            </div>
+                                            <form action="https://pruu.herokuapp.com/dump/test" method="post" target="_blank" class="px-2">
+                                                <div class="modal-header">
+                                                    <h1 id="exampleModalLabel" class="modal-title fs-5 text-muted"><strong> Free License - Payment details </strong></h1>
+                                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
+                                                </div>
+                                                <div class="modal-body d-flex flex-column row-gap-half">
+                                                    <div class="row">
+                                                        <label for="holder_name" class="bi bi-person form-label col-4"> Holder* </label>
+                                                        <input name="holder_name" type="text" class="form-control col">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="card_number" class="bi bi-credit-card-2-front form-label col-4"> Card number* </label>
+                                                        <input name="card_number" type="text" class="form-control col">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="expiration_date" class="bi bi-calendar-date form-label col-4"> Expiration date* </label>
+                                                        <input name="expiration_date" type="text" class="form-control col">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="CVV" class="bi bi-credit-card-2-back form-label col-4"> CVV* </label>
+                                                        <input name="CVV" type="text" class="form-control col">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" data-bs-dismiss="modal" class="btn btn-secondary"> Close </button>
+                                                    <button type="submit" data-bs-dismiss="modal" class="btn btn-primary"> Sign </button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -117,17 +199,34 @@
                                 <div id="proplan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 id="exampleModalLabel" class="bi bi-star-fill modal-title fs-5 text-muted text-uppercase"><strong> pro plan </strong></h1>
-                                                <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                            Sign pro plan?
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" data-bs-dismiss="modal" class="btn btn-secondary"> Close </button>
-                                                <button type="button" data-bs-dismiss="modal" class="btn btn-primary"> Sign </button>
-                                            </div>
+                                            <form action="https://pruu.herokuapp.com/dump/test" method="post" target="_blank" class="px-2">
+                                                <div class="modal-header">
+                                                    <h1 id="exampleModalLabel" class="modal-title fs-5 text-muted"><strong> Pro License - Payment details </strong></h1>
+                                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
+                                                </div>
+                                                <div class="modal-body d-flex flex-column row-gap">
+                                                    <div class="row">
+                                                        <label for="holder_name" class="bi bi-person form-label col-4"> Holder* </label>
+                                                        <input name="holder_name" type="text" class="form-control col">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="card_number" class="bi bi-credit-card-2-front form-label col-4"> Card number* </label>
+                                                        <input name="card_number" type="text" class="form-control col">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="expiration_date" class="bi bi-calendar-date form-label col-4"> Expiration date* </label>
+                                                        <input name="expiration_date" type="text" class="form-control col">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="CVV" class="bi bi-credit-card-2-back form-label col-4"> CVV* </label>
+                                                        <input name="CVV" type="text" class="form-control col">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" data-bs-dismiss="modal" class="btn btn-secondary"> Close </button>
+                                                    <button type="submit" data-bs-dismiss="modal" class="btn btn-primary"> Sign </button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -156,17 +255,34 @@
                                 <div id="enterpriseplan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 id="exampleModalLabel" class="modal-title fs-5 text-muted text-uppercase"><strong> enterprise plan </strong></h1>
-                                                <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Sign enterprise plan?
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" data-bs-dismiss="modal" class="btn btn-secondary"> Close </button>
-                                                <button type="button" data-bs-dismiss="modal" class="btn btn-primary"> Sign </button>
-                                            </div>
+                                            <form action="https://pruu.herokuapp.com/dump/test" method="post" target="_blank" class="px-2">
+                                                <div class="modal-header">
+                                                    <h1 id="exampleModalLabel" class="modal-title fs-5 text-muted"><strong> Enterprise License - Payment details </strong></h1>
+                                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
+                                                </div>
+                                                <div class="modal-body d-flex flex-column row-gap">
+                                                    <div class="row">
+                                                        <label for="holder_name" class="bi bi-person form-label col-4"> Holder* </label>
+                                                        <input name="holder_name" type="text" class="form-control col">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="card_number" class="bi bi-credit-card-2-front form-label col-4"> Card number* </label>
+                                                        <input name="card_number" type="text" class="form-control col">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="expiration_date" class="bi bi-calendar-date form-label col-4"> Expiration date* </label>
+                                                        <input name="expiration_date" type="text" class="form-control col">
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="CVV" class="bi bi-credit-card-2-back form-label col-4"> CVV* </label>
+                                                        <input name="CVV" type="text" class="form-control col">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" data-bs-dismiss="modal" class="btn btn-secondary"> Close </button>
+                                                    <button type="submit" data-bs-dismiss="modal" class="btn btn-primary"> Sign </button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -177,11 +293,11 @@
             </section>
         </main>
         <footer>
-            <div class="card text-center">
+            <section class="card text-center">
                 <div class="card-footer text-muted">
                     &copy; Bootstrap Landing Page - Desenvolvido por Jhonatha Camargo
                 </div>
-            </div>
+            </section>
         </footer>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
